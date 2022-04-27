@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
-
-
+const sequelize = require('../config/connection');
 
 // create our User model
 class User extends Model {
@@ -65,6 +63,3 @@ User.init(
 module.exports = User;
 
 
-
-
-// bcrypt.hash(myPlaintextPassword, saltRounds).then(function(hash) {});
